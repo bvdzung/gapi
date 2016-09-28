@@ -1,0 +1,38 @@
+{
+    "name": "gtk/gapi",
+    "description": "API Response for Laravel & Lumen.",
+    "license": "MIT",
+    "keywords": ["gapi", "api response", "laravel", "lumen"],
+    "authors": [
+        {
+            "name": "Giang Thai Cuong",
+            "email": "thaicuong.giang@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.0",
+        "illuminate/contracts": "~5.0",
+        "illuminate/http": "~5.0",
+        "league/fractal": "^0.13.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "dev-master",
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gtk\\Gapi\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
