@@ -58,9 +58,9 @@ class ApiResponse
         return $this;
     }
 
-    public function withArray(array $array, array $headers = [])
+    public function withArray(array $data, array $headers = [])
     {
-        return new JsonResponse($array, $this->statusCode, $headers);
+        return new JsonResponse($data, $this->statusCode, $headers);
     }
 
     public function withItem($data, $transformer, $resourceKey = null, $meta = [], array $headers = [])
